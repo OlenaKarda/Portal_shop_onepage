@@ -1,298 +1,238 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230519150512">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Rubik:wght@400;700&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/fontsstyle.css">
-	<link rel="stylesheet" href="css/aboutus.css">
-	<link rel="stylesheet" href="css/products.css">
-	<link rel="stylesheet" href="css/details.css">
-	<link rel="stylesheet" href="css/cooperation.css">
-	<title>Portal shop</title>
 </head>
+
 <body>
 	<div class="wrapper">
-		<header id="open" class="header">
-			<div id="close" class="header__container">
+		<header class="header">
+			<div class="header__container">
 				<a href="" class="header__logo">
-					<img src="img/logo.png" alt="logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
 				</a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="#about" class="menu__link" active>Головна</a>
-							</li>
-							<li class="menu__item">
-								<a href="#aboutus" class="menu__link">Про нас</a>
-							</li>
-							<li class="menu__item">
-								<a href="#products" class="menu__link">Товари</a>
-							</li>
-							<li class="menu__item">
-								<a href="#cooperation" class="menu__link">Співпраця</a>
-							</li>
+							<li class="menu__item"><a data-goto=".about" href="" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a data-goto=".aboutus" href="" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a data-goto=".products" href="" class="menu__link">Товари</a></li>
+							<li class="menu__item"><a data-goto=".cooperation" href="" class="menu__link">Співпраця</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="header__button">
 					<div class="contacts-menu__items">
-						<a href="mailto:portalshop.order@gmail.com" class="contacts-menu__item"><img src="img/icons/mail.svg"
-								alt=""></a>
+						<a href="mailto:portalshop.order@gmail.com" class="contacts-menu__item"><img src="img/icons/mail.svg" alt=""></a>
 						<a href="tel:+380936623031" class="contacts-menu__item"><img src="img/icons/phone.svg" alt=""></a>
-						<a href="https://www.facebook.com/profile.php?id=100089234342446" target="blank"
-							class="contacts-menu__item">
+						<a href="https://www.facebook.com/profile.php?id=100089234342446" target="blank" class="contacts-menu__item">
 							<img src="img/icons/social/facebook.svg" alt="Facebook">
 						</a>
 						<a href="https://www.instagram.com/__portal_shop__/" target="blank" class="contacts-menu__item">
 							<img src="img/icons/social/instagram.svg" alt="Instagram">
 						</a>
-						<a href="https://www.youtube.com/@user-yr2dt5hs9c/featured" target="blank"
-							class="contacts-menu__item">
+						<a href="https://www.youtube.com/@user-yr2dt5hs9c/featured" target="blank" class="contacts-menu__item">
 							<img src="img/icons/social/youtube.svg" alt="YouTube">
 						</a>
 					</div>
-					<a href="#open" class="icon-menu"><span></span></a>
-					<a href="#header" class="close-icon-menu"></a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
 		</header>
-		<main class="main">
-			<section class="about" id="about">
+		<main class="page">
+			<section class="page_about about">
 				<div class="about__container">
-					<div class="about__content">
-						<div class="title">
-							<div class="title__label">Головна</div>
-							<!-- <h2 class="title__value">Featured Portfolios</h2> -->
-						</div>
-						<div class="about__block-text block-text">
-							<h1 class="block-text__title">
-								Вітаємо тебе в <br> <span>Portal Sh<span class="icon-heart1"></span>p!</span>
-							</h1>
-						</div>
-						<div class="about__text">
-							<p>Компанія Portal Sh<span class="icon-heart1"></span>p - український виробник товарів для домашніх
-								тварин</p>
-							<p>Наша команда ставить перед собою завдання розвиватися та реалізовувати свої ідеї, дотримуючись
-								найсучасніших технологій виробництва та використовуючи тільки високоякісні матеріали.</p>
-							<p>Наша ціль - виготовлення якісної та люксової продукції для домашніх улюбленців. </p>
-						</div>
-						<div class="about__attraction attraction-about">
-							<div class="attraction-about__title">Переваги продукції Portal Sh<span
-									class="icon-heart1"></span>p:
+					<div class="about__body">
+						<div class="about__content">
+							<div class="title">
+								<div class="title__label">Головна</div>
 							</div>
-							<ul class="attraction-about__list">
-								<li class="attraction-about__item">
-									Власне виробництво та ексклюзивний дизайн.
-								</li>
-								<li class="attraction-about__item">
-									Використовуються високоякісні матеріали.
-								</li>
-								<li class="attraction-about__item">
-									Вся продукція протестована на міцність та зносостійкість.
-								</li>
-								<li class="attraction-about__item">
-									Використовуються сучасні гіпоалергенні наповнювачі.
-								</li>
-								<li class="attraction-about__item">
-									Знімні чохли та універсальність використання.
-								</li>
-								<li class="attraction-about__item">
-									Можливість вибрати розмір під свого улюбленця.
-								</li>
-								<li class="attraction-about__item">
-									Швидка відправка товару.
-								</li>
-							</ul>
+							<div class="about__block-text block-text">
+								<h1 class="block-text__title block-text__title_b">
+									Вітаємо тебе в <br> <span>Portal Shop!</span>
+								</h1>
+							</div>
+							<div class="about__text text">
+								<p>Компанія Portal Shop - український виробник товарів для
+									домашніх тварин</p>
+								<p>Наша команда ставить перед собою завдання розвиватися та реалізовувати свої ідеї,
+									дотримуючись найсучасніших технологій виробництва та використовуючи тільки високоякісні матеріали.</p>
+								<p>Наша ціль - виготовлення якісної та люксової продукції для домашніх улюбленців. </p>
+							</div>
+							<div class="about__attraction attraction">
+								<div class="attraction__title">Переваги продукції Portal Shop:
+								</div>
+								<ul class="attraction__list">
+									<li class="attraction__item">
+										Власне виробництво та ексклюзивний дизайн.
+									</li>
+									<li class="attraction__item">
+										Використовуються високоякісні матеріали.
+									</li>
+									<li class="attraction__item">
+										Вся продукція протестована на міцність та зносостійкість.
+									</li>
+									<li class="attraction__item">
+										Використовуються сучасні гіпоалергенні наповнювачі.
+									</li>
+									<li class="attraction__item">
+										Знімні чохли та універсальність використання.
+									</li>
+									<li class="attraction__item">
+										Можливість вибрати розмір під свого улюбленця.
+									</li>
+									<li class="attraction__item">
+										Швидка відправка товару.
+									</li>
+								</ul>
+							</div>
+							<a href="#products" class="block-text__button button">Товари</a>
 						</div>
-						<a href="#products" class="block-text__button button">Товари</a>
-					</div>
-					<div class="about__image">
-						<img src="img/about/cat_main.jpg" alt="Cat main">
+						<div class="about__image">
+							<picture><source srcset="img/about/cat_main.webp" type="image/webp"><img src="img/about/cat_main.jpg" alt="Cat main"></picture>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section id="aboutus" class="aboutus">
+			<section class="page__aboutus aboutus">
 				<div class="aboutus__container">
 					<div class="title">
 						<div class="title__label">про нас</div>
-						<!-- <h2 class="title__value">Featured Portfolios</h2> -->
 					</div>
-					<!-- <div class="products__block-text block-text">
-						<div class="block-text__title block-text__title_blue">
-							У <span>Portal Shop</span> є дві категорії товарів
-						</div>
-					</div> -->
-					<div class="aboutus__header aboutus-products">
-
-						<div class="aboutus-products__content">
-							<!-- <h2 class="block-text__title block-text__title_blue">
-								<span>Portal Shop</span>
-							</h2> -->
-							<!-- <div class="block-text__text">
-								У нас ви підберете якісну, зручну та легку в догляді лежанку для свого улюбленця, яка радуватиме
-								око та впишиться у ваш інтерьєр.
-							</div> -->
-						</div>
-						<!-- <a href="https://www.instagram.com/__portal_shop__/" class="header-products__link">Всі наявні моделі ви
-							знайдете в Instagram</a> -->
-					</div>
-					<div class="aboutus__tabs tabs-aboutus">
-						<nav class="tabs-aboutus__nav">
-							<div><button type="button" class="tabs-aboutus__button active">Знімні чохли</button></div>
-							<div><button type="button" class="tabs-aboutus__button">Догляд за лежанками</button></div>
-							<div><button type="button" class="tabs-aboutus__button">Як визначити розмір</button></div>
+					<div data-tabs class="aboutus__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Знімні чохли</button>
+							<button type="button" class="tabs__title">Догляд за лежанками</button>
+							<button type="button" class="tabs__title">Як визначити розмір</button>
 						</nav>
-						</nav>
-						<div class="tabs-aboutus__body">
-							<div class="tabs-aboutus__item aboutus-tabs active">
-								<div class="aboutus-tabs__items">
-									<div class="change__body change__body_rev">
-										<div class="change__care">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/mTyZ3WxO9nc"
-												title="YouTube care player" frameborder="0"
-												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-												allowfullscreen></iframe>
-										</div>
-										<div class="change__content">
-											<div class="block-text__text">
-												<p> Всі лежанки йдуть зі знімними чохлами, що дозволяє нам легко та зручно попрати
-													чохол, а
-													також
-													можливість змінювати чохли.</p>
-												<p>Наша команда відповідально та безкомпромісно підходить до розробки майбутнього
-													дизайну,
-													вибору матеріалу, пошиття та враховуємо всі особливості вашого улюбленця.</p>
-												<p>Даруємо затишок улюбленцю, він може почувати себе як в
-													господарському ліжку.</p>
-												<p>Ми робимо лежаки максимально практичними і комфортними для улюбленців, та
-													легкими в догляді для господарів.</p>
-												<p>При створенні лежанок використовуємо найміцніші, зносостійкі, водовідштовхуючі,
-													стійкі до
-													подряпин тканини.</p>
-
-												<p>Пріоритетами для
-													нас завжди є і будуть: якість нашої продукції, її зручність, практичність та
-													універсальність.
-												</p>
-
-												<p>У нас є різні розміри, від найменших - до найбільших!</p>
-
-												<p>Нам також важливо комфорт господаря.</p>
-											</div>
-
-											<a href="#products" class="button button_blue">Товари</a>
-
-										</div>
-
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="change__body">
+									<div class="change__care">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/mTyZ3WxO9nc" title="YouTube care player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 									</div>
-								</div>
-							</div>
-							<div class="tabs-aboutus__item aboutus-tabs">
-								<div class="aboutus-tabs__items">
-									<div class="change__body">
-										<div class="change__content">
-											<div class="change__block-text block-text">
-												<div class="about__attraction attraction-about">
-													<div class="attraction-about__text">Використовуємо повітропроникні матеріали, що
-														не втрачають
-														форму і не мнуться, міцні та
-														зносостійкі, водовідштовхуючі та стійкі до подряпин, тому не є вибагливими у
-														догляді.
-													</div>
-													<div class="attraction-about__title">Рекомендуємо дотримуватись таких правил по
-														догляду:
-													</div>
-													<ul class="attraction-about__list">
-														<li class="attraction-about__item">
-															перед пранням, зняти чохол та застебнути всі блискавки;
-														</li>
-														<li class="attraction-about__item">
-															прання до 30°
-														</li>
-														<li class="attraction-about__item">
-															викручувати на мінімальних оборотах;
-														</li>
-														<li class="attraction-about__item">
-															не прасувати;
-														</li>
-														<li class="attraction-about__item">
-															забруднення можна легко видалити вологим методом - обробки брудної ділянки
-															теплою водою
-															і
-															милом, протираючи пляму за допомогою губки або спеціальних засобів для
-															чищення на
-															водній
-															основі;
-														</li>
-														<li class="attraction-about__item">
-															не змішуйте кілька засобів для чищення, оскільки можна отримати
-															несподіваний ефект, а
-															також
-															не слід наносити засіб безпосередньо на пляму, а тільки на губку або щітку.
-														</li>
-														<li class="attraction-about__item">
-															для того, щоб підтримувати привабливий зовнішній вигляд - достатнього
-															сухого чищення
-															щіткою
-															або пилососом.
-														</li>
-													</ul>
-												</div>
-												<a href="#products" class="button button_blue">Товари</a>
-											</div>
-										</div>
-										<div class="change__care">
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/mTyZ3WxO9nc"
-												title="YouTube care player" frameborder="0"
-												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-												allowfullscreen></iframe>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tabs-aboutus__item aboutus-tabs">
-								<div class="aboutus-tabs__items">
-									<div class="size__body">
-										<div class="size__title">Як правильно визначити розмір лежанки</div>
-										<div class="size__text">
-											<p>Правильний підбір лежанки для собаки чи кота починається з вибору її розміру.
-												</br>Перш за все вона не повинна бути маленькою, проте переплачувати за зайві
-												сантиметри також не потрібно.</p>
-
-										</div>
-										<div class="size__subtitle">Оптимальний розмір лежанки обчислюється за
-											універсальною формулою:</div>
-										<div class="size__calc calc-size">
-											<div class="calc-size__item">довжина по спині</div>
-											<div class="calc-size__item"><span> + </span> </div>
-											<div class="calc-size__item calc-size__item_sm">15-20см </div>
-											<div class="calc-size__item"><span> = </span></div>
-											<div class="calc-size__item">довжина лежанки</div>
-										</div>
-										<div class="size__image">
-											<img class="image__calc" src="img/cooperation/01.jpg" alt="">
-										</div>
-										<div class="size__text">
-											<p>Вимірювати довжину тварини необхідно від початку шиї до початку хвоста (як показано
-												на малюнку). </br>Купувати лежак рекомендується на виріст, тобто – потрібно знати
-												максимальні розміри породи і заздалегідь підбирати відповідну модель з запасом в
-												15см - 20см. </p>
-											<p>Чим більший улюбленець, тим просторіше має бути спальне місце.</p>
-											<p>
-												Зверніть увагу, як любить спати ваш улюбленець - витягується або згортається в
-												клубок. Коли ваш улюбленець лежить витягнувшись, від повинен поміщатися повністю,
-												голова і лапи не повинні звисати, якщо «калачиком» - треба як мінімум по 5 см запасу
-												з кожного боку, щоб була можливість крутитись і потягуватись.
+									<div class="change__content">
+										<div class="block-text__text text">
+											<p> Всі лежанки йдуть зі знімними чохлами, що дозволяє нам легко та зручно попрати
+												чохол, а також можливість змінювати чохли.</p>
+											<p>Наша команда відповідально та безкомпромісно підходить до розробки майбутнього
+												дизайну, вибору матеріалу, пошиття та враховуємо всі особливості вашого улюбленця.</p>
+											<p>Даруємо затишок улюбленцю, він може почувати себе як в
+												господарському ліжку.</p>
+											<p>Ми робимо лежаки максимально практичними і комфортними для улюбленців, та
+												легкими в догляді для господарів.</p>
+											<p>При створенні лежанок використовуємо найміцніші, зносостійкі, водовідштовхуючі,
+												стійкі до подряпин тканини.</p>
+											<p>Пріоритетами для нас завжди є і будуть: якість нашої продукції, її зручність, практичність та
+												універсальність.
 											</p>
+											<p>У нас є різні розміри, від найменших - до найбільших!</p>
+											<p>Нам також важливо комфорт господаря.</p>
 										</div>
+
+										<a href="#products" class="button button_blue">Товари</a>
+
+									</div>
+
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="change__body">
+									<div class="change__content">
+										<div class="about__attraction attraction">
+											<div class="attraction__text text">Використовуємо повітропроникні матеріали, що
+												не втрачають
+												форму і не мнуться, міцні та
+												зносостійкі, водовідштовхуючі та стійкі до подряпин, тому не є вибагливими у
+												догляді.
+											</div>
+											<div class="attraction__title">Рекомендуємо дотримуватись таких правил по
+												догляду:
+											</div>
+											<ul class="attraction__list">
+												<li class="attraction__item">
+													перед пранням, зняти чохол та застебнути всі блискавки;
+												</li>
+												<li class="attraction__item">
+													прання до 30°
+												</li>
+												<li class="attraction__item">
+													викручувати на мінімальних оборотах;
+												</li>
+												<li class="attraction__item">
+													не прасувати;
+												</li>
+												<li class="attraction__item">
+													забруднення можна легко видалити вологим методом - обробки брудної ділянки
+													теплою водою
+													і
+													милом, протираючи пляму за допомогою губки або спеціальних засобів для
+													чищення на
+													водній
+													основі;
+												</li>
+												<li class="attraction__item">
+													не змішуйте кілька засобів для чищення, оскільки можна отримати
+													несподіваний ефект, а
+													також
+													не слід наносити засіб безпосередньо на пляму, а тільки на губку або щітку.
+												</li>
+												<li class="attraction__item">
+													для того, щоб підтримувати привабливий зовнішній вигляд - достатнього
+													сухого чищення
+													щіткою
+													або пилососом.
+												</li>
+											</ul>
+											<a href="#products" class="button button_blue">Товари</a>
+										</div>
+									</div>
+									<div class="change__care">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/mTyZ3WxO9nc" title="YouTube care player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="size__body">
+									<div class="size__title">Як правильно визначити розмір лежанки</div>
+									<div class="size__text text">
+										<p>Правильний підбір лежанки для собаки чи кота починається з вибору її розміру.
+											</br>Перш за все вона не повинна бути маленькою, проте переплачувати за зайві
+											сантиметри також не потрібно.</p>
+
+									</div>
+									<div class="size__subtitle">Оптимальний розмір лежанки обчислюється за
+										універсальною формулою:</div>
+									<div class="size__calc calc-size">
+										<div class="calc-size__item">довжина по спині</div>
+										<div class="calc-size__item"><span> + </span> </div>
+										<div class="calc-size__item calc-size__item_sm">15-20см </div>
+										<div class="calc-size__item"><span> = </span></div>
+										<div class="calc-size__item">довжина лежанки</div>
+									</div>
+									<div class="size__image">
+										<picture><source srcset="img/cooperation/01.webp" type="image/webp"><img class="image__calc" src="img/cooperation/01.jpg" alt=""></picture>
+									</div>
+									<div class="size__text text">
+										<p>Вимірювати довжину тварини необхідно від початку шиї до початку хвоста (як показано
+											на малюнку). </br>Купувати лежак рекомендується на виріст, тобто – потрібно знати
+											максимальні розміри породи і заздалегідь підбирати відповідну модель з запасом в
+											15см - 20см. </p>
+										<p>Чим більший улюбленець, тим просторіше має бути спальне місце.</p>
+										<p>
+											Зверніть увагу, як любить спати ваш улюбленець - витягується або згортається в
+											клубок. Коли ваш улюбленець лежить витягнувшись, від повинен поміщатися повністю,
+											голова і лапи не повинні звисати, якщо «калачиком» - треба як мінімум по 5 см запасу
+											з кожного боку, щоб була можливість крутитись і потягуватись.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -300,589 +240,1320 @@
 					</div>
 				</div>
 			</section>
-			<section id="products" class="products">
+			<section id="products" class="page__products products">
 				<div class="products__container">
 					<div class="title">
 						<div class="title__label">Товари</div>
-						<!-- <h2 class="title__value">Featured Portfolios</h2> -->
 					</div>
-
 					<div class="content__products">
-						<div class="content__grid">
-							<div class="grid" id="grid">
-
-								<div class="product__card card">
-									<a href="petbed01.html"><img src="./img/petbeds/01.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Deluxe Yellow</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+						<div class="content__grid grid">
+							<div class="product__card card">
+								<a href="#petbed01"><picture><source srcset="img/petbeds/01.webp" type="image/webp"><img src="img/petbeds/01.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Deluxe Yellow</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed01"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed02.html"><img src="./img/petbeds/02.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Deluxe Blue</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed02"><picture><source srcset="img/petbeds/02.webp" type="image/webp"><img src="img/petbeds/02.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Deluxe Blue</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed02"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed03.html"><img src="./img/petbeds/03.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Deluxe Tiffany</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed03"><picture><source srcset="img/petbeds/03.webp" type="image/webp"><img src="img/petbeds/03.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Deluxe Tiffany</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed03"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed04.html"><img src="./img/petbeds/04.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Deluxe Powder</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed04"><picture><source srcset="img/petbeds/04.webp" type="image/webp"><img src="img/petbeds/04.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Deluxe Powder</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed04"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed05.html"><img src="./img/petbeds/05.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Deluxe Grey</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed05"><picture><source srcset="img/petbeds/05.webp" type="image/webp"><img src="img/petbeds/05.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Deluxe Grey</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed05"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="#details"><img src="./img/petbeds/06.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Deluxe Beige</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed06"><picture><source srcset="img/petbeds/06.webp" type="image/webp"><img src="img/petbeds/06.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Deluxe Beige</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed06"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed07.html"><img src="./img/petbeds/07.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Deluxe Green</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed07"><picture><source srcset="img/petbeds/07.webp" type="image/webp"><img src="img/petbeds/07.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Deluxe Green</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed07"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed08.html"><img src="./img/petbeds/08.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Minky Grey</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed08"><picture><source srcset="img/petbeds/08.webp" type="image/webp"><img src="img/petbeds/08.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Minky Grey</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed08"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed09.html"><img src="./img/petbeds/09.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Minky Dark Grey</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed09"><picture><source srcset="img/petbeds/09.webp" type="image/webp"><img src="img/petbeds/09.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Minky Dark Grey</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed09"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed10.html"><img src="./img/petbeds/10.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Fur Grey</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed10"><picture><source srcset="img/petbeds/10.webp" type="image/webp"><img src="img/petbeds/10.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Fur Grey</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed10"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed11.html"><img src="./img/petbeds/11.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Wellsoft Grey</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed11"><picture><source srcset="img/petbeds/11.webp" type="image/webp"><img src="img/petbeds/11.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Wellsoft Grey</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed11"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed12.html"><img src="./img/petbeds/12.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Wellsoft Cat</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed12"><picture><source srcset="img/petbeds/12.webp" type="image/webp"><img src="img/petbeds/12.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Wellsoft Cat</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed12"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed13.html"><img src="./img/petbeds/13.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Wellsoft Leopard</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed13"><picture><source srcset="img/petbeds/13.webp" type="image/webp"><img src="img/petbeds/13.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Wellsoft Leopard</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed13"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed14.html"><img src="./img/petbeds/14.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Wellsoft Bone</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed14"><picture><source srcset="img/petbeds/14.webp" type="image/webp"><img src="img/petbeds/14.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Wellsoft Bone</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed14"><button class="card__btn">Детальніше</button></a>
 								</div>
+							</div>
 
-								<div class="product__card card">
-									<a href="petbed15.html"><img src="./img/petbeds/15.jpg" alt=""></a>
-									<div class="card__info">
-										<h4 class="card__title">Лежанка Fur Bone</h4>
-										<div class="card__price">
-											Ціна від <span>500</span> грн.
-										</div>
-										<a href="#details"><button class="card__btn">Детальніше</button></a>
+							<div class="product__card card">
+								<a href="#petbed15"><picture><source srcset="img/petbeds/15.webp" type="image/webp"><img src="img/petbeds/15.jpg" alt=""></picture></a>
+								<div class="card__info">
+									<h4 class="card__title">Лежанка Fur Bone</h4>
+									<div class="card__price">
+										Ціна від <span>500</span> грн.
 									</div>
+									<a href="#petbed15"><button class="card__btn">Детальніше</button></a>
 								</div>
-
 							</div>
 						</div>
 					</div>
+
 					<div class="products__info info-products">
-						<div class="info-products__text">Більше фото та відео товарів <span>Portal Sh<span
-									class="icon-heart1"></span>p!</span> ви знайдете в
-							<a href="https://www.instagram.com/__portal_shop__/" target="blank"
-								class="info-products__link">Instagram
+						<div class="info-products__text text">Більше фото та відео товарів Portal Shop!</span> ви знайдете в
+							<a href="https://www.instagram.com/__portal_shop__/" target="blank" class="info-products__link">Instagram
 								<img src="img/icons/social/instagram.svg" alt="Instagram">
 							</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="details" class="details">
+			<section id="details" class="page__details details">
 				<div class="details__container">
 					<div class="title">
-						<div class="title__label">детальніше про товари</div>
-						<!-- <h2 class="title__value">Featured Portfolios</h2> -->
+						<div class="title__label">Детальніше</div>
 					</div>
-					<div class="petbed__content">
-						<div class="petbed__image">
-							<img src="img/petbeds/big/dog.jpg" alt="">
-						</div>
-						<div class="petbed__info">
-							<div class="petbed__item">
-
-								<div class="petbed__subtitle">Матеріали:</div>
-								<div class="petbed__list">
-									<ul>
-										<li class="petbed__li">зовнішня частина лежанки - меблевий велюр
-											(антикіготь)</li>
-										<li class="petbed__li">внутрішня частина лежанки - в асортименті, залежить від моделі
-											(меблевий велюр
-											(антикіготь), плюш minky dots, махра Wellsoft або штучне хутро)</li>
-										<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
-										<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+					<div class="details__slider swiper">
+						<div class="details__wrapper swiper-wrapper">
+							<div id="petbed01" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Deluxe Yellow</span>
+										</li>
 									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/01.webp" type="image/webp"><img src="img/petbeds/big/01.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">меблевий велюр (антикіготь)</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
-								<select name="size" class="select__petbed">
-									<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
-									<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
-									<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
-									<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
-									<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
-									<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
-									<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
-									<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
-								</select>
-								<div class="petbed__actions">
-									<a href="#cooperation" class=" card-product button button_light">Замовити</a>
-								</div>
-								<div class="petbed__cover">
-									Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
-									<br>Тому ви маєте можливість змінювати чохли.
-								</div>
-								<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
-								<select name="size" class="select__cover">
-									<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
-									<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
-									<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
-									<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
-									<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
-									<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
-									<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
-									<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
-								</select>
-								<div class="petbed__actions">
-									<a href="#cooperation" class=" card-product button button_light">Замовити</a>
-								</div>
-
-								<div class="petbed__details">Детальніше про змінні чохли, про догляд за лежанками та про
-									те, як підібрати правильний розмір читайте в розділі <a href="#aboutus">Про нас</a></div>
 							</div>
+							<div id="petbed02" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Deluxe Blue</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/02.webp" type="image/webp"><img src="img/petbeds/big/02.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">меблевий велюр (антикіготь)</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed03" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Deluxe Tiffany</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/03.webp" type="image/webp"><img src="img/petbeds/big/03.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">меблевий велюр (антикіготь)</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed04" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Deluxe Powder</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/04.webp" type="image/webp"><img src="img/petbeds/big/04.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">меблевий велюр (антикіготь)</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed05" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Deluxe Grey</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/05.webp" type="image/webp"><img src="img/petbeds/big/05.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">меблевий велюр (антикіготь)</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed06" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Deluxe Beige</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/06.webp" type="image/webp"><img src="img/petbeds/big/06.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">меблевий велюр (антикіготь)</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed07" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Deluxe Green</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/07.webp" type="image/webp"><img src="img/petbeds/big/07.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">меблевий велюр (антикіготь)</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed08" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Minky Grey</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/08.webp" type="image/webp"><img src="img/petbeds/big/08.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">зовнішня частина лежанки - меблевий велюр
+														(антикіготь)</li>
+													<li class="petbed__li">внутрішня частина лежанки - плюш minky dots</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed09" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Minky Dark Grey</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/09.webp" type="image/webp"><img src="img/petbeds/big/09.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">зовнішня частина лежанки - меблевий велюр
+														(антикіготь)</li>
+													<li class="petbed__li">внутрішня частина лежанки - плюш minky dots</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+												</ul>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed10" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Fur Grey</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/10.webp" type="image/webp"><img src="img/petbeds/big/10.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">зовнішня частина лежанки - меблевий велюр
+														(антикіготь)</li>
+													<li class="petbed__li">внутрішня частина лежанки - штучне хутро</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed11" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Wellsoft Grey</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/11.webp" type="image/webp"><img src="img/petbeds/big/11.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">зовнішня частина лежанки - меблевий велюр
+														(антикіготь)</li>
+													<li class="petbed__li">внутрішня частина лежанки - махра Wellsoft</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li> - гіпоалергенний холлофайбер</li>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed12" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Wellsoft Cat</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/12.webp" type="image/webp"><img src="img/petbeds/big/12.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">зовнішня частина лежанки - меблевий велюр
+														(антикіготь)</li>
+													<li class="petbed__li">внутрішня частина лежанки - махра Wellsoft принт</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed13" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Wellsoft Leopard</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/13.webp" type="image/webp"><img src="img/petbeds/big/13.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">зовнішня частина лежанки - меблевий велюр
+														(антикіготь)</li>
+													<li class="petbed__li">внутрішня частина лежанки - махра Wellsoft</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed14" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Wellsoft Bone</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/14.webp" type="image/webp"><img src="img/petbeds/big/14.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">зовнішня частина лежанки - штучне хутро принт
+													</li>
+													<li class="petbed__li">внутрішня частина лежанки - махра Wellsoft</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="petbed15" class="details__slide swiper-slide">
+								<nav class="page__breadcrumbs breadcrumbs">
+									<ul class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="#products" class="breadcrumbs__link">Товари -->></a>
+										</li>
+										<li class="breadcrumbs__item">
+											<span class="breadcrumbs__current">Лежанка Wellsoft Bone</span>
+										</li>
+									</ul>
+								</nav>
+								<div class="petbed__content">
+									<div class="petbed__image">
+										<picture><source srcset="img/petbeds/big/15.webp" type="image/webp"><img src="img/petbeds/big/15.jpg" alt=""></picture>
+									</div>
+									<div class="petbed__info">
+										<div class="petbed__item">
+											<!-- <div class="petbed__title title">
+												Лежанка Deluxe Yellow
+											</div> -->
+											<div class="petbed__subtitle">Матеріали:</div>
+											<div class="petbed__list">
+												<ul>
+													<li class="petbed__li">зовнішня частина лежанки - штучне хутро принт
+													</li>
+													<li class="petbed__li">внутрішня частина лежанки - махра Wellsoft</li>
+													<li class="petbed__li">нижня частина лежанки - антиковзна тканина</li>
+													<li class="petbed__li">наповнювач - гіпоалергенний холлофайбер</li>
+											</div>
+											<div class="petbed__subtitle">Ціна лежанки залежить від розміру:</div>
+											<select name="size" class="select__petbed">
+												<option value="30 на 40 см" selected> 30 х 40 см - 500 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 700 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 900 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 1100 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 1300 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1600 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1900 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 2200 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+											<div class="petbed__cover">
+												Всі лежанки <span>Portal Sh<span class="icon-heart1"></span>p</span> мають знімні чохли.
+												<br>Тому ви маєте можливість змінювати чохли.
+											</div>
+											<div class="cover__subtitle">Ціна чохла залежить від розміру:</div>
+											<select name="size" class="select__cover">
+												<option value="30 на 40 см" selected> 30 х 40 см - 300 грн</option>
+												<option value="35 на 45 см" selected> 35 х 45 см - 450 грн</option>
+												<option value="40 на 50 см" selected> 40 х 50 см - 600 грн</option>
+												<option value="45 на 60 см" selected> 45 х 60 см - 750 грн</option>
+												<option value="50 на 70 см" selected> 50 х 70 см - 850 грн</option>
+												<option value="60 на 90 см" selected> 60 х 90 см - 1050 грн</option>
+												<option value="70 на 110 см" selected> 70 х 110 см - 1250 грн</option>
+												<option value="80 на 120 см" selected> 80 х 120 см - 1450 грн</option>
+											</select>
+											<div class="petbed__actions">
+												<a href="#cooperation" class=" card-product button button_light">Замовити</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details__swiper-pagination swiper-pagination"></div>
+					</div>
+					<div class="products__info info-products">
+						<div class="info-products__text text">Детальніше про змінні чохли, про догляд за лежанками та про
+							те, як підібрати правильний розмір читайте в розділі <a href="#aboutus">Про нас</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="cooperation" class="cooperation">
+			<section id="cooperation" class="page__cooperation cooperation">
 				<div class="cooperation__container">
 					<div class="title">
 						<div class="title__label">співпраця</div>
-						<!-- <h2 class="title__value">Featured Portfolios</h2> -->
 					</div>
-					<!-- <div class="products__block-text block-text">
-						<div class="block-text__title block-text__title_blue">
-							У <span>Portal Shop</span> є дві категорії товарів
-						</div>
-					</div> -->
-
-					<div class="cooperation__tabs tabs-cooperation">
-						<nav class="tabs-cooperation__nav">
-
-							<div><button type="button" class="tabs-cooperation__button active">Оформлення замовлення</button>
-							</div>
-							<div><button type="button" class="tabs-cooperation__button">Доставка</button></div>
-							<div><button type="button" class="tabs-cooperation__button">Оплата</button></div>
-
+					<div data-tabs class="aboutus__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Оформлення замовлення</button>
+							<button type="button" class="tabs__title">Доставка</button>
+							<button type="button" class="tabs__title">Оплата</button>
 						</nav>
-						</nav>
-						<div class="tabs-cooperation__body">
-
-							<div class="tabs-cooperation__item cooperation-tabs active">
-								<div class="cooperation-tabs__items">
-
-									<div class="cooperation_body">
-										<div class="cooperation__title">Оформлення замовлення</div>
-										<div class="cooperation__text">
-											<p>Ми приймаємо ваші замовлення за телефоном та консультуємо з 9.30 до 18.00 з
-												понеділка по
-												п’ятницю.</p>
-										</div>
-										<div class="cooperation__text">
-											<p>
-												Заявку на замовлення можна подати зручним для вас способом:
-											</p>
-										</div>
-										<ul class="cooperation__list">
-											<li class="cooperation__link link-coopetation__item">
-												<a href="mailto:portalshop.order@gmail.com" class="link-coopetation__item">написати
-													нам
-													електронного листа <img src="img/icons/mail.svg" alt=""></a>
-											</li>
-											<li class="cooperation__link link-coopetation__item">
-												<a href="tel:+380936623031" class="link-coopetation__item">зателефонувати
-													<img src="img/icons/phone.svg" alt=""></a>
-											</li>
-											<li class="cooperation__link link-coopetation__item">
-												<a href="viber://chat?number=%2B380936623031">написати повідомлення на Viber
-													перейшовши за посиланням <img src="img/cooperation/viber.svg" alt="viber"></a>
-
-											</li>
-											<li class="cooperation__link link-coopetation__item">
-												<a href="https://t.me/+380936623031">написати повідомлення на Telegram
-													перейшовши за посиланням<img src="img/cooperation/telegram.svg"
-														alt="telegram"></a>
-											</li>
-											<a href="">
-												<li class="cooperation__link link-coopetation__item">
-													заповнити форму на сайті і ми з Вами зв’яжемося
-												</li>
-											</a>
-										</ul>
-										<div class="cooperation__form form-cooperation">
-											<div class="form-cooperation__body">
-												<form action="https://formsubmit.co/portalshop.order@gmail.com"
-													class="contacts__form form" method="POST">
-													<div class="form__item">
-														<label for="formName" class="form__label ">Ваше Ім'я</label>
-														<input id="formName" type="text" name="Name" placeholder=""
-															class="form__input" required>
-													</div>
-													<div class="form__item">
-														<label for="formPhone" class="form__label">Номер телефону</label>
-														<input id="formPhone" type="text" name="Phone" placeholder=""
-															class="form__input" required>
-													</div>
-													<div class="form__item">
-														<label for="formEmail" class="form__label">Email</label>
-														<input id="formEmail" type="text" name="Email" placeholder=""
-															class="form__input" required>
-													</div>
-													<div class="form__item">
-														<div class="form__label">Оберіть назву лежанки</div>
-														<select name="Лежанка" class="select">
-															<option value="---" selected> ---
-															</option>
-															<option value="Лежанка Deluxe Yellow" selected> Лежанка Deluxe Yellow
-															</option>
-															<option value="Лежанка Deluxe Blue" selected> Лежанка Deluxe Blue </option>
-															<option value="Лежанка Deluxe Tiffany" selected> Лежанка Deluxe Tiffany
-															</option>
-															<option value="Лежанка Deluxe Powder" selected> Лежанка Deluxe Powder
-															</option>
-															<option value="Лежанка Deluxe Grey" selected> Лежанка Deluxe Grey </option>
-															<option value="Лежанка Deluxe Beige" selected> Лежанка Deluxe Beige
-															</option>
-															<option value="Лежанка Deluxe Green" selected> Лежанка Deluxe Green
-															</option>
-															<option value="Лежанка Minky Grey" selected> Лежанка Minky Grey
-															</option>
-															<option value="Лежанка Minky Dark Grey" selected> Лежанка Minky Dark Grey
-															</option>
-															<option value="Лежанка Minky Fur Grey" selected> Лежанка Fur Grey
-															</option>
-															<option value="Лежанка Wellsoft Grey" selected> Лежанка Wellsoft Grey
-															</option>
-															<option value="Лежанка Wellsoft Cat" selected> Лежанка Wellsoft Cat
-															</option>
-															<option value="Лежанка Wellsoft Leopard" selected> Лежанка Wellsoft Leopard
-															</option>
-															<option value="Лежанка Wellsoft Bone" selected> Лежанка Wellsoft Bone
-															</option>
-															<option value="Лежанка Fur Bone" selected> Лежанка Fur Bone </option>
-														</select>
-													</div>
-													<div class="form__item">
-														<div class="form__label">Оберіть бажаний розмір лежанки</div>
-														<select name="Розмір лежанки" class="select">
-															<option value="---" selected> --- </option>
-															<option value="30 на 40 см - 500 грн" selected> 30 х 40 см - 500 грн
-															</option>
-															<option value="35 на 45 см - 700 грн" selected> 35 х 45 см - 700 грн
-															</option>
-															<option value="40 на 50 см - 900 грн" selected> 40 х 50 см - 900 грн
-															</option>
-															<option value="45 на 60 см - 1100 грн" selected> 45 х 60 см - 1100 грн
-															</option>
-															<option value="50 на 70 см - 1300 грн" selected> 50 х 70 см - 1300 грн
-															</option>
-															<option value="60 на 90 см - 1600 грн" selected> 60 х 90 см - 1600 грн
-															</option>
-															<option value="70 на 110 см - 1900 грн" selected> 70 х 110 см - 1900 грн
-															</option>
-															<option value="80 на 120 см - 2200 грн" selected> 80 х 120 см - 2200 грн
-															</option>
-														</select>
-													</div>
-													<div class="form__item">
-														<div class="form__label">Оберіть назву чохла </div>
-														<select name="Чохол" class="select">
-															<option value="---" selected> ---
-															</option>
-															<option value="Чохол Deluxe Yellow" selected> Чохол Deluxe Yellow
-															</option>
-															<option value="Чохол Deluxe Blue" selected> Чохол Deluxe Blue </option>
-															<option value="Чохол Deluxe Tiffany" selected> Чохол Deluxe Tiffany
-															</option>
-															<option value="Чохол Deluxe Powder" selected> Чохол Deluxe Powder </option>
-															<option value="Чохол Deluxe Grey" selected> Чохол Deluxe Grey </option>
-															<option value="Чохол Deluxe Beige" selected> Чохол Deluxe Beige </option>
-															<option value="Чохол Deluxe Green" selected> Чохол Deluxe Green </option>
-															<option value="Чохол Minky Grey" selected> Чохол Minky Grey
-															</option>
-															<option value="Чохол Minky Dark Grey" selected> Чохол Minky Dark Grey
-															</option>
-															<option value="Чохол Minky Fur Grey" selected> Чохол Fur Grey
-															</option>
-															<option value="Чохол Wellsoft Grey" selected> Чохол Wellsoft Grey
-															</option>
-															<option value="Чохол Wellsoft Cat" selected> Чохол Wellsoft Cat
-															</option>
-															<option value="Чохол Wellsoft Leopard" selected> Чохол Wellsoft Leopard
-															</option>
-															<option value="Чохол Wellsoft Bone" selected> Чохол Wellsoft Bone
-															</option>
-															<option value="Чохол Fur Bone" selected> Чохол Fur Bone </option>
-														</select>
-													</div>
-													<div class="form__item">
-														<div class="form__label">Оберіть бажаний розмір чохла</div>
-														<select name="Розмір чохла" class="select">
-															<option value="---" selected> --- </option>
-															<option value="30 на 40 см - 300 грн" selected> 30 х 40 см - 300 грн
-															</option>
-															<option value="35 на 45 см - 450 грн" selected> 35 х 45 см - 450 грн
-															</option>
-															<option value="40 на 50 см - 600 грн" selected> 40 х 50 см - 600 грн
-															</option>
-															<option value="45 на 60 см - 750 грн" selected> 45 х 60 см - 750 грн
-															</option>
-															<option value="50 на 70 см - 850 грн" selected> 50 х 70 см - 850 грн
-															</option>
-															<option value="60 на 90 см - 1050 грн" selected> 60 х 90 см - 1050 грн
-															</option>
-															<option value="70 на 110 см - 1250 грн" selected> 70 х 110 см - 1250 грн
-															</option>
-															<option value="80 на 120 см - 1450 грн" selected> 80 х 120 см - 1450 грн
-															</option>
-														</select>
-													</div>
-													<div class="form__item">
-														<label for="formMessage" class="form__label">Повідомлення</label>
-														<textarea id="formMessage" name="Повідомлення" placeholder=""
-															class="form__input" required></textarea>
-													</div>
-													<div class="form__item">
-														<button type="submit" class="form__button">Надіслати
-															повідомлення</button>
-													</div>
-												</form>
-											</div>
-
-										</div>
-
-
-										<div class="cooperation__text">
-											<p>Для узгодження та уточнення деталей
-												замовлення, способу доставки та оплати ми з вами зв’яжемося протягом декількох
-												годин з
-												моменту розміщення замовлення (в робочий час) і протягом наступного робочого дня,
-												якщо
-												замовлення зроблене в неробочий час.</p>
-										</div>
-
-
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="cooperation_body">
+									<div class="cooperation__text text">
+										<p>Ми приймаємо ваші замовлення за телефоном та консультуємо з 9.30 до 18.00 з
+											понеділка по
+											п’ятницю.</p>
 									</div>
+									<div class="cooperation__text text">
+										<p>
+											Заявку на замовлення можна подати зручним для вас способом:
+										</p>
+									</div>
+									<ul class="cooperation__list">
+										<li class="cooperation__link">
+											<a href="mailto:portalshop.order@gmail.com" class="link-coopetation__item">написати
+												нам
+												електронного листа <img src="img/icons/mail.svg" alt=""></a>
+										</li>
+										<li class="cooperation__link">
+											<a href="tel:+380936623031" class="link-coopetation__item">зателефонувати
+												<img src="img/icons/phone.svg" alt=""></a>
+										</li>
+										<li class="cooperation__link">
+											<a href="viber://chat?number=%2B380936623031" class="link-coopetation__item">написати повідомлення на Viber
+												перейшовши за посиланням <img src="img/cooperation/viber.svg" alt="viber"></a>
 
+										</li>
+										<li class="cooperation__link">
+											<a href="https://t.me/+380936623031" class="link-coopetation__item">написати повідомлення на Telegram
+												перейшовши за посиланням<img src="img/cooperation/telegram.svg" alt="telegram"></a>
+										</li>
+									</ul>
+									<div class="cooperation__text text">
+										<p>Для узгодження та уточнення деталей
+											замовлення, способу доставки та оплати ми з вами зв’яжемося протягом декількох
+											годин з
+											моменту розміщення замовлення (в робочий час) і протягом наступного робочого дня,
+											якщо
+											замовлення зроблене в неробочий час.</p>
+									</div>
 								</div>
 							</div>
-							<div class="tabs-cooperation__item cooperation-tabs">
-								<div class="cooperation-tabs__items">
-
-									<div class="cooperation__body">
-										<div class="cooperation__title">Доставка</div>
-										<div class="cooperation__text">
-											<p>
-												Доставку здійснюється кур’єрськими службами по всій
-												території
-												України.
-											</p>
-										</div>
-										<ul class="cooperation__list">
-											<li class="cooperation__link">Укрпошта</li>
-											<li class="cooperation__link">Нова пошта</li>
-											<li class="cooperation__link">Meest</li>
-											<li class="cooperation__link">Justin</li>
-										</ul>
-										<div class="cooperation__text">
-											<p>Вартість доставки оплачує замовник.</p>
-											<p>
-												Є можливість самовивозу з м.Стрий. Ви зможете
-												оглянути товар
-												та
-												здійснити
-												оплату.
-											</p>
-										</div>
-
+							<div class="tabs__body">
+								<div class="cooperation__body">
+									<div class="cooperation__text text">
+										<p>
+											Доставку здійснюється кур’єрськими службами по всій
+											території
+											України.
+										</p>
 									</div>
-
+									<ul class="cooperation__list">
+										<li class="cooperation__link">Укрпошта</li>
+										<li class="cooperation__link">Нова пошта</li>
+										<li class="cooperation__link">Meest</li>
+										<li class="cooperation__link">Justin</li>
+									</ul>
+									<div class="cooperation__text text">
+										<p>Вартість доставки оплачує замовник.</p>
+										<p>
+											Є можливість самовивозу з м.Стрий. Ви зможете
+											оглянути товар
+											та
+											здійснити
+											оплату.
+										</p>
+									</div>
 								</div>
 							</div>
-							<div class="tabs-cooperation__item cooperation-tabs">
-								<div class="cooperation-tabs__items">
-
-									<div class="cooperation__body">
-										<div class="cooperation__title">Способи оплати замовлення</div>
-										<ul class="cooperation__list">
-											<li class="cooperation__link">Готівка (під час Самовивозу)</li>
-											<li class="cooperation__link">Картка Приватбанку (Після оформлення замовлення
-												ми
-												зв’яжемося
-												з вами для уточнення деталей і відправимо реквізити картки.)</li>
-											<li class="cooperation__link">Накладенний платіж у відділенні кур’єрської
-												служби при
-												отриманні замовлення (згідно тарифам кур’єрської служби)</li>
-										</ul>
-									</div>
-
-
+							<div class="tabs__body">
+								<div class="cooperation__body">
+									<ul class="cooperation__list">
+										<li class="cooperation__link">Готівка (під час Самовивозу)</li>
+										<li class="cooperation__link">Картка Приватбанку (Після оформлення замовлення
+											ми
+											зв’яжемося
+											з вами для уточнення деталей і відправимо реквізити картки.)</li>
+										<li class="cooperation__link">Накладенний платіж у відділенні кур’єрської
+											служби при
+											отриманні замовлення (згідно тарифам кур’єрської служби)</li>
+									</ul>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__body body-footer">
-					<div class="body-footer__column">
-						<a href="" class="body-footer__logo">
-							<img src="img/logo.png" alt="Footer Logo">
-						</a>
-					</div>
-					<div class="body-footer__column body-footer__column_full">
-						<nav class="body-footer__menu menu-footer">
-
-							<nav class="menu-footer__body">
-								<ul class="menu-footer__list">
-									<li class="menu-footer__item">
-										<a href="#about" class="menu-footer__link" active>Головна</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#aboutus" class="menu-footer__link">Про нас</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#products" class="menu-footer__link">Товари</a>
-									</li>
-									<li class="menu-footer__item">
-										<a href="#cooperation" class="menu-footer__link">Співпраця</a>
-									</li>
-								</ul>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body body-footer">
+						<div class="body-footer__column">
+							<a href="" class="body-footer__logo">
+								<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Footer Logo"></picture>
+							</a>
+							<nav class="body-footer__menu menu-footer">
+								<div class="menu-footer__body">
+									<ul class="menu-footer__list">
+										<li class="menu-footer__item">
+											<a href="" class="menu-footer__link" active>Головна</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="products.html" class="menu-footer__link">Товари</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="aboutus.html" class="menu-footer__link">Про нас</a>
+										</li>
+										<li class="menu-footer__item">
+											<a href="cooperation.html" class="menu-footer__link">Співпраця</a>
+										</li>
+									</ul>
+								</div>
 							</nav>
+						</div>
 
-						</nav>
-					</div>
-					<div class="body-footer__column">
-						<ul class="body-footer__contacts contacts-footer">
-							<li class="contacts-footer__item">
-								<a href="mailto:portalshop.order@gmail.com"
-									class="contacts-footer__link contacts-footer__link_mail">portalshop.order@gmail.com</a>
-							</li>
-							<li class="contacts-footer__item">
-								<a href="tel:+380936623031" class="contacts-footer__link contacts-footer__link_phone">+380
-									93 662 3031</a>
-							</li>
-						</ul>
+						<div class="body-footer__column">
+							<ul class="body-footer__contacts contacts-footer">
+								<li class="contacts-footer__item">
+									<a href="mailto:portalshop.order@gmail.com" class="contacts-footer__link contacts-footer__link_mail">portalshop.order@gmail.com</a>
+								</li>
+								<li class="contacts-footer__item">
+									<a href="tel:+380936623031" class="contacts-footer__link contacts-footer__link_phone">+380
+										93 662 3031</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
-	</div>
+			</footer>
+		</main>
 
-	<script src="js/script.js"></script>
+	</div>
+	<script src="js/app.min.js?_v=20230519150512"></script>
 </body>
+
 </html>
